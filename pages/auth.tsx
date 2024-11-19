@@ -14,7 +14,7 @@ const Auth = () => {
     }, [])
 
   return (
-    <div className='relative w-full h-full bg-[url(/images/hero2.jpg)] bg-no-repeat bg-center bg-fixed bg-cover'>
+    <div className='relative w-full h-full bg-[url(/images/hero.jpg)] bg-no-repeat bg-center bg-fixed bg-cover'>
         <div className='bg-black w-full h-full lg:bg-opacity-50'>
             <nav className='px-12 py-5'>
                 <img src='/images/logo.png' alt='Logo' className='h-12' />
@@ -27,21 +27,21 @@ const Auth = () => {
                     <div className='flex flex-col gap-4'>
                         {variant === 'register' && (
                             <Input 
-                                    label='Username'
+                                    label='ニックネーム'
                                     onChange={(ev: any) => setName(ev.target.value)}
                                     id='name'
                                     value={name}
                             />
                         )}
                         <Input 
-                            label='Email'
+                            label='メールアドレス'
                             onChange={(ev: any) => setEmail(ev.target.value)}
                             id='email'
                             type='email'
                             value={email}
                         />
                         <Input 
-                            label='Password'
+                            label='パスワード'
                             onChange={(ev: any) => setPassword(ev.target.value)}
                             id='password'
                             type='password'
