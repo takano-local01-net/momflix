@@ -46,7 +46,7 @@ export default NextAuth({
                     throw new Error('Email does not exist')
                 }
 
-                const isCorrectPassword = await compare(
+                const x = await compare(
                     credentials.password, 
                     user.hashedPassword
                 );
